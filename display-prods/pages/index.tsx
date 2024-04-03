@@ -12,6 +12,7 @@ function HomePage() {
         const data = response.data;
         setCompanies(data);
         setLoading(false);
+        console.log(data);
       } catch (error) {
         console.error("Failed to fetch companies:", error);
       }
